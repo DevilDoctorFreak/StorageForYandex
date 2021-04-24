@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Добавить предмет</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nicepage.css')}}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/add_items.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='css/jquery.js')}}"
+            defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='css/nicepage.js')}}"
+            defer=""></script>
+    <meta name="generator" content="Nicepage 3.11.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "url": "index.html",
+        "logo": "images/default-logo.png",
+        "sameAs": [
+            "https://vk.com/docsilent",
+            "mailto:kvachuksergeyalekseevich@gmail.com",
+            "https://www.youtube.com/watch?v=ZNix8iSggEU"
+        ]
+    }</script>
+    <meta property="og:title" content="add_own_items">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+</head>
+<body class="u-body">
+<header class="u-clearfix u-header u-header" id="sec-8bdd">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+            <img src="{{url_for('static', filename='images/default-logo.png')}}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                   href="#">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </symbol>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="index" style="padding: 22px 24px;">Главная</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="about" style="padding: 22px 24px;">О нас</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="login" style="padding: 22px 24px;">Профиль</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index"
+                                                      style="padding: 22px 24px;">Главная</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="about"
+                                                      style="padding: 22px 24px;">О нас</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="login"
+                                                      style="padding: 22px 24px;">Профиль</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="u-clearfix u-grey-5 u-section-1" id="sec-6432">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-absolute-hcenter u-expanded-height u-palette-3-base u-shape u-shape-rectangle u-shape-1"></div>
+        <h3 class="u-text u-text-1">Добавление предмета на свой склад</h3>
+        <a href="https://nicepage.com/c/technology-website-templates" class="u-btn u-button-style u-none u-btn-1"></a>
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.name.label }}<br>
+                {{ form.name(class="form-control") }}<br>
+                {% for error in form.name.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+            {% endfor %}
+            </p>
+            <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+            {{ message }}
+        </form>
+    </div>
+</section>
+
+
+<footer class="u-clearfix u-footer u-grey-80" id="sec-918f">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">Данный сайт является проектом ученика Яндекс.Лицея.<br>Все права защищены. 2021
+        </p>
+        <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+            <a class="u-social-url" title="Vkontakte" target="_blank" href="https://vk.com/docsilent"><span
+                    class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link"
+                                                                                               preserveAspectRatio="xMidYMin slice"
+                                                                                               viewBox="0 0 97.75 97.75"
+                                                                                               style=""><use
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3506"></use></svg><svg
+                    class="u-svg-content" viewBox="0 0 97.75 97.75" x="0px" y="0px" id="svg-3506"
+                    style="enable-background:new 0 0 97.75 97.75;"><g><path
+                    d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z    M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883   l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604   c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089   c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625   c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037   c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762   c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455   c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946   l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794   c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058   c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471   C71.48,50.992,71.611,52.155,73.667,54.161z"></path>
+</g></svg></span>
+            </a>
+            <a class="u-social-url" title="gmail" target="_blank" href="mailto:kvachuksergeyalekseevich@gmail.com"><span
+                    class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link"
+                                                                                              preserveAspectRatio="xMidYMin slice"
+                                                                                              viewBox="0 0 512 512"
+                                                                                              style=""><use
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0ace"></use></svg><svg
+                    class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-0ace"
+                    style="enable-background:new 0 0 512 512;"><g><g><path
+                    d="M462.275,55.689c-0.085-0.001-0.162-0.026-0.247-0.026c-0.039,0-0.076-0.011-0.115-0.011H50.087    c-0.034,0-0.066,0.01-0.1,0.01c-0.073,0-0.143,0.021-0.217,0.022C22.3,55.859,0,78.228,0,105.739v300.522    c0,27.619,22.468,50.087,50.087,50.087h411.826c27.619,0,50.087-22.468,50.087-50.087V105.739    C512,78.244,489.725,55.888,462.275,55.689z M411.826,422.957H100.174V240.652l120.413,120.414    c9.761,9.761,22.587,14.652,35.413,14.652c12.826,0,25.652-4.892,35.413-14.652l120.414-120.414V422.957z M256,254.805    L90.239,89.043h331.54L256,254.805z"></path>
+</g>
+</g></svg></span>
+            </a>
+            <a class="u-social-url" title="youtube" target="_blank"
+               href="https://www.youtube.com/watch?v=ZNix8iSggEU"><span
+                    class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link"
+                                                                                                preserveAspectRatio="xMidYMin slice"
+                                                                                                viewBox="0 0 512 512"
+                                                                                                style=""><use
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e3ab"></use></svg><svg
+                    class="u-svg-content" viewBox="0 0 512 512" id="svg-e3ab"><path
+                    d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"></path><path
+                    d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"></path></svg></span>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
